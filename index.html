@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      @media (min-width: 992px) {
+        .hero-monkey-desktop {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          max-width: 220px;
+          z-index: 2;
+        }
+      }
+      @media (max-width: 991px) {
+        .hero-monkey-mobile {
+          max-width: 60%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section id="title" class="hero-section">
+      <img src="./Images/code.png" alt="Background Code" class="hero-bg" />
+
+      <div class="container text-center position-relative hero-content">
+        <img
+          src="./Images/Monkey Coding.png"
+          alt="Monkey Coding"
+          class="hero-monkey-desktop d-none d-lg-block"
+        />
+
+        <h1 class="hero-title">I'm Michael</h1>
+        <p class="lead hero-subtitle">A programmer and web developer</p>
+
+        <img src="./Images/My Photo.png" alt="My Photo" class="my-photo" />
+
+        <img
+          src="./Images/Monkey Coding.png"
+          alt="Monkey Coding"
+          class="hero-monkey-mobile d-lg-none mt-4"
+        />
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container text-center">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-text">
+          I'm Michael — a self-taught programmer and aspiring web developer. I
+          learn fast, adapt easily, and love solving technical problems. With a
+          background in customer service, technical support, virtual assistance,
+          and employee training, I bring strong communication and
+          problem-solving skills into tech.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2 class="section-title text-center">Skills</h2>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-4 skill-card">
+            <h4>HTML</h4>
+            <p class="stars">★★★☆☆</p>
+          </div>
+
+          <div class="col-md-4 skill-card">
+            <h4>CSS</h4>
+            <p class="stars">★★★☆☆</p>
+          </div>
+
+          <div class="col-md-4 skill-card">
+            <h4>JavaScript</h4>
+            <p class="stars">★★☆☆☆</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title text-center">Projects</h2>
+
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="project-card">
+              <img
+                src="./Images/First Project.jpg"
+                alt="Project One Thumbnail"
+                class="project-img"
+              />
+              <h5 class="project-title">My First Project</h5>
+              <p class="project-text">
+                This is my first output as i finished my html course study.
+              </p>
+              <a
+                href="https://michaeljoniferecmj.github.io/html-portfolio/"
+                target="_blank"
+                class="btn btn-primary mt-2"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="project-card">
+              <img
+                src="./Images/Second Project.jpg"
+                alt="Project One Thumbnail"
+                class="project-img"
+              />
+              <h5 class="project-title">My Second Project</h5>
+              <p class="project-text">
+                We were asked to create a resume page maximing the use of our
+                HTML knowledge.
+              </p>
+              <a
+                href="https://michaeljoniferecmj.github.io/Capstone-1---My-Resume/"
+                target="_blank"
+                class="btn btn-primary mt-2"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="project-card">
+              <img
+                src="./Images/Third Project.jpg"
+                alt="Project One Thumbnail"
+                class="project-img"
+              />
+              <h5 class="project-title">Project Three</h5>
+              <p class="project-text">
+                This is my latest project combining HTML and CSS knowledge with
+                the use of bootstrap.
+              </p>
+              <a
+                href="https://michaeljoniferecmj.github.io/Capstone-1---My-Resume/"
+                target="_blank"
+                class="btn btn-primary mt-2"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container text-center">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-text">
+          Feel free to reach out! Whether it's a project, a question, or just to
+          say hi, I'd love to hear from you.
+        </p>
+
+        <div class="contact-buttons mt-4">
+          <a href="mailto:michaeljoniferecmj.com" class="btn btn-primary mx-2"
+            >Email Me</a
+          >
+          <a
+            href="https://www.linkedin.com/in/michael-ervin-superable-aba1182a4"
+            target="_blank"
+            class="btn btn-outline-light mx-2"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/michaeljoniferecmj"
+            target="_blank"
+            class="btn btn-outline-light mx-2"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

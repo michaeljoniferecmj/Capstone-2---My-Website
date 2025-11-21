@@ -1,0 +1,203 @@
+/* HERO SECTION ------------------------------------------------------- */
+.hero-section {
+  position: relative;
+  background-color: #222831;
+  overflow: hidden;
+  padding-top: 120px;  /* extra top space */
+  padding-bottom: 120px; /* extra bottom space */
+}
+
+/* Ensure hero grows naturally on tall screens */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;  /* space between subtitle and photo */
+  position: relative;
+  z-index: 3;
+}
+
+/* Faded background left image */
+.hero-bg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  max-width: 60%;
+  opacity: 0.12;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Your personal image */
+.my-photo {
+  max-width: 180px;
+  border-radius: 50%;
+  border: 3px solid #DFD0B8;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .my-photo {
+    max-width: 140px;
+  }
+
+  .hero-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .hero-content {
+    gap: 30px;
+  }
+}
+
+/* Monkey images */
+.hero-monkey-desktop {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  max-width: 260px;
+  z-index: 2;
+}
+
+.hero-monkey-mobile {
+  max-width: 60%;
+  z-index: 2;
+}
+
+/* Title and subtitle */
+.hero-title {
+  color: #DFD0B8;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero-subtitle {
+  color: #e7dccc;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+
+/* GENERAL --------------------------------------------------------------*/
+.section-title {
+  font-size: 2.5rem;
+  color: #DFD0B8;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #d3c7b7;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+/* ABOUT SECTION --------------------------------------------------------*/
+.about-section {
+  padding: 100px 0;
+  background-color: #1e232a;
+}
+
+/* SKILLS SECTION -------------------------------------------------------*/
+.skills-section {
+  padding: 100px 0;
+  background-color: #222831;
+}
+
+.skill-card {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #2d343d;
+  color: #DFD0B8;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform .3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+}
+
+.stars {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  color: #f5d68a;
+}
+
+/* PROJECTS SECTION -----------------------------------------------------*/
+.projects-section {
+  padding: 100px 0;
+  background-color: #1e232a;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes button to bottom */
+  background-color: #2d343d;
+  padding: 20px;
+  border-radius: 12px;
+  color: #DFD0B8;
+  transition: transform .3s, box-shadow .3s;
+  height: 100%; /* allow flex parent to equalize height */
+}
+
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.project-img {
+  width: 100%;
+  max-height: 250px;   /* same for all cards */
+  object-fit: cover;   /* fills the space without stretching */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+
+
+.project-title {
+  font-size: 1.3rem;
+  color: #f2dfc4;
+}
+
+.project-text {
+  color: #d7cfc2;
+  font-size: 1rem;
+}
+
+/* CONTACT SECTION ----------------------------------------------------- */
+.contact-section {
+  padding: 100px 0;
+  background-color: #1e232a;
+  color: #DFD0B8;
+}
+
+.contact-section .btn {
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: transform .3s;
+}
+
+.contact-section .btn:hover {
+  transform: translateY(-5px);
+}
+
+.contact-section .btn-outline-light {
+  color: #DFD0B8;
+  border-color: #DFD0B8;
+}
+
+.contact-section .btn-outline-light:hover {
+  background-color: #DFD0B8;
+  color: #222831;
+}
+
